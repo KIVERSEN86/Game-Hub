@@ -1,3 +1,9 @@
 @font-face {
   font-family: "Trebuchet MS";
 }
+
+.cta {
+  background-color: #e9e9e9;
+  color: #000000;
+  font-size: 1.5em;
+}
