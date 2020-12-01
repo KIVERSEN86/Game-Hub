@@ -4,6 +4,13 @@
   font-size: 1.5em;
 }
 
+h1,
+h2,
+.logo {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
 body {
   background: linear-gradient(to bottom right, #87e2ef 0%, #b8e9c5 100%);
 }
