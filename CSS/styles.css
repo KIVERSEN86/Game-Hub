@@ -1,13 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 h1,
 h2,
-.logo {
+.logo .cta {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
 
 body {
   background: linear-gradient(to bottom right, #87e2ef 0%, #b8e9c5 100%);
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -16,10 +25,15 @@ h1 {
 
 .cta {
   background-color: #e9e9e9;
+  text-decoration: none;
   color: #000000;
   font-size: 1.5em;
+  padding: 10px 70px;
+  border-radius: 5px;
 }
 
-li {
+/* NAV */
+nav li {
   display: inline;
+  padding: 10px;
 }
