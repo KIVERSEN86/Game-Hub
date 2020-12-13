@@ -17,6 +17,7 @@ h2,
 body {
   background: linear-gradient(to bottom right, #87e2ef 0%, #b8e9c5 100%);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -28,12 +29,40 @@ h1 {
   text-decoration: none;
   color: #000000;
   font-size: 1.5em;
-  padding: 10px 70px;
+  padding: 10px 90px;
   border-radius: 5px;
 }
 
+.current {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 /* NAV */
+ul {
+  padding: 0px;
+}
+
 nav li {
   display: inline;
+}
+
+nav a {
   padding: 10px;
+}
+
+/* Frontpage */
+.example__picture {
+  max-width: 400px;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.logo {
+  max-width: 280px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
 }
