@@ -59,6 +59,14 @@ nav a {
   margin-top: 20px;
 }
 
+.frontpage__images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
 .logo {
   max-width: 280px;
   margin-left: 10px;
