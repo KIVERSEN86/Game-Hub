@@ -42,6 +42,7 @@ h1 {
 ul {
   padding: 0px;
   margin-left: 300px;
+  font-size: 1.2em;
 }
 
 nav li {
@@ -70,6 +71,17 @@ nav a {
 .logo {
   max-width: 280px;
   margin-left: 10px;
+}
+
+.Get__started {
+  float: right;
+  padding-bottom: 50px;
+}
+
+section::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* Links */
