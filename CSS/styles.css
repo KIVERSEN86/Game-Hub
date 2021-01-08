@@ -34,40 +34,65 @@ h1 {
   font-weight: bold;
   padding: 10px 100px;
   border-radius: 5px;
+  border: solid 1px #000000;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
 }
 
 .current {
   text-decoration: underline;
   font-weight: bold;
+  font-size: 1.75em;
+  color: #ffffff;
 }
 
 /* NAV */
 ul {
-  padding: 0px;
-  margin-left: 300px;
-  font-size: 1.2em;
+  margin-left: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul a:hover {
+  color: #ffffff;
 }
 
 nav li {
-  display: inline;
+  display: inline-block;
 }
 
 nav a {
-  padding: 10px;
+  padding: 40px;
 }
 
-/* Frontpage */
+.searchbar {
+  float: right;
+  display: block;
+  color: #707070;
+  text-align: center;
+  padding: 10px 150px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 100px;
+  border-radius: 28px;
+}
 
-.nav__bar {
+.topnav {
   display: flex;
   justify-content: flex-end;
   background: #1b203d;
 }
 
-.nav__bar a {
+.topnav__links {
   color: #ffffff;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  padding: 10px;
 }
+
+/* FRONTPAGE */
 
 .welcome {
   position: relative;
@@ -75,7 +100,7 @@ nav a {
 
 .get__started {
   position: absolute;
-  bottom: 100px;
+  bottom: 125px;
   left: 1070px;
   text-align: center;
 }
@@ -91,7 +116,7 @@ nav a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 250px;
+  margin-top: 405px;
 }
 
 .frontpage__images img {
@@ -104,18 +129,20 @@ nav a {
   margin-left: 25px;
 }
 
-/* Search page */
+/* SEARCH PAGE */
 .grid-container {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 230px 230px 230px;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 275px 275px 275px 275px;
   grid-column-gap: 10px;
+  row-gap: 10px;
   padding: 10px;
   justify-content: center;
 }
 
 .search {
   text-align: center;
+  text-decoration: underline;
 }
 
 .grid-item {
@@ -126,23 +153,33 @@ nav a {
   text-align: center;
 }
 
+/* CONTACT */
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 275px 275px 275px;
+  grid-template-rows: 275px 275px 275px;
+  grid-column-gap: 10px;
+  row-gap: 10px;
+  justify-content: center;
+}
+
 .grid-item2 {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
   font-size: 30px;
+  padding: 20px;
   text-align: center;
 }
 
-/* Links */
+/* LINKS */
 a {
   text-decoration: none;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   background: #e7ebe4;
   min-height: 170px;
-  margin-top: 50px;
   text-align: center;
 }
