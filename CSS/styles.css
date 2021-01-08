@@ -37,6 +37,10 @@ h1 {
   border: solid 1px #000000;
 }
 
+.cta:hover {
+  background-color: #c6c4c4;
+}
+
 header {
   display: flex;
   align-items: flex-end;
@@ -45,7 +49,7 @@ header {
 .current {
   text-decoration: underline;
   font-weight: bold;
-  font-size: 1.75em;
+  font-size: 1.5em;
   color: #ffffff;
 }
 
@@ -54,6 +58,10 @@ ul {
   margin-left: 10px;
   font-size: 1.5em;
   font-weight: bold;
+}
+
+nav ul a {
+  color: #000000;
 }
 
 nav ul a:hover {
@@ -84,12 +92,18 @@ nav a {
   display: flex;
   justify-content: flex-end;
   background: #1b203d;
+  padding: 5px;
 }
 
 .topnav__links {
   color: #ffffff;
   font-size: 1.5em;
   padding: 10px;
+}
+
+.topnav-icons {
+  color: #ffffff;
+  margin-left: 2px;
 }
 
 /* FRONTPAGE */
@@ -182,4 +196,8 @@ footer {
   background: #e7ebe4;
   min-height: 170px;
   text-align: center;
+}
+
+.footer-icon {
+  color: #1b203d;
 }
