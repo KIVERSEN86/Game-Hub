@@ -23,7 +23,7 @@ body {
 
 h1 {
   color: #1b203d;
-  font-size: 4em;
+  font-size: 2.5em;
 }
 
 .cta {
@@ -32,7 +32,7 @@ h1 {
   color: #000000;
   font-size: 2em;
   font-weight: bold;
-  padding: 10px 100px;
+  padding: 5px 30px;
   border-radius: 5px;
   border: solid 1px #000000;
 }
@@ -48,8 +48,7 @@ h1 {
 
 .logo {
   display: inline-block;
-  width: 280px;
-  margin: 40px;
+  width: 100px;
 }
 
 .navbar {
@@ -114,15 +113,15 @@ nav ul a:hover {
 
 .get__started {
   position: absolute;
-  left: 1070px;
-  bottom: 100px;
   text-align: center;
+  bottom: 100px;
+  left: 45px;
 }
 
 .frontpage__images {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 400px auto 20px auto;
+  grid-template-columns: 1fr;
+  margin: 300px auto 20px auto;
   max-width: 1000px;
   grid-gap: 20px;
 }
@@ -188,4 +187,36 @@ footer {
 
 .footer-icon {
   color: #1b203d;
+}
+
+.footer__left {
+  float: left;
+}
+
+.footer__right {
+  float: right;
+}
+
+@media (min-width: 600px) {
+  .frontpage__images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cta {
+    padding: 10px 100px;
+  }
+
+  .get__started {
+    left: 1070px;
+    bottom: 100px;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  .logo {
+    display: inline-block;
+    width: 280px;
+    margin: 40px;
+  }
 }
