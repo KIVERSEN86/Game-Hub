@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
@@ -21,41 +21,48 @@
         </div>
     </section>
     <header>
-      <div><img src="images/GameHub_Logo.png" class="logo" alt="Game Hub logo"/></div>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="current">Home</a></li>
-          <li><a href="Games.html">Games</a></li>
-          <li><a href="Categories.html">Categories</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          <a href="search.html"><input type="text" placeholder="Search.." class="searchbar"></a>
-        </ul>
-      </nav>
+        <nav class="navbar">
+            <a><img src="images/GameHub_Logo.png" class="logo" alt="Game Hub logo"/></a>
+            <ul class="nav-links">
+               <li><a href="index.html" class="current">Home</a></li>
+               <li><a href="Games.html">Games</a></li>
+               <li><a href="Categories.html">Categories</a></li>
+               <li><a href="Contact.html">Contact</a></li>
+               <li><a><input type="text" placeholder="Search.." class="searchbar"></a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <section class="welcome">
-        <div class="get__started">
-          <h1>Sell your games here</h1>
-          <a href="CreateAccount.html" class="cta cta-started">Get Started</a>
-        </div>  
-      </section>
-        <section class="frontpage__images">
-        <div>
-          <img src="images/Image-1.jpg" alt="Example picture" class="example__picture" />
-        </div>
-        <div>
-          <img src="images/Image-1.jpg" alt="Example picture" class="example__picture" />
-        </div>
-        <div>
-          <img src="images/Image-1.jpg" alt="Example picture" class="example__picture" />
-        </div>
-      </section>
+        <section class="welcome">
+            <div class="get__started">
+              <h1>Sell your games here</h1>
+              <a href="CreateAccount.html" class="cta cta-started">Get Started</a>
+            </div>  
+          </section>
+            <section class="frontpage__images">
+            <div>
+              <img src="images/Image-1.jpg" alt="Featured picture" class="featured__picture" />
+            </div>
+            <div>
+              <img src="images/Image-2.jpg" alt="Featured picture" class="featured__picture" />
+            </div>
+            <div>
+              <img src="images/Image-1.jpg" alt="Featured picture" class="featured__picture" />
+            </div>
+          </section>
     </main>
-  <footer>
-    <div>
-      <i class="fas fa-users footer-icon ">About us</i>
-      <i class="fas fa-address-card footer-icon">Contact</i>
-    </div>
-    Copyright &copy;</footer>
+   <footer>
+        <div class="footer__left">
+          <i class="fas fa-users footer-icon fa-2x"></i>
+          <p>About Us</p>
+          <i class="fas fa-address-card footer-icon fa-2x"></i>
+          <p>Contact</p>
+        </div>
+        <div class="footer__right">
+            <i class="fab fa-instagram-square footer-icon fa-2x"></i>
+            <i class="fab fa-facebook-square footer-icon fa-2x"></i>
+            <i class="fab fa-youtube footer-icon fa-2x"></i>
+        </div>
+        Copyright &copy;</footer>
   </body>
 </html>

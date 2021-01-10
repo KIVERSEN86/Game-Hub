@@ -41,23 +41,35 @@ h1 {
   background-color: #c6c4c4;
 }
 
-header {
-  display: flex;
-  align-items: flex-end;
-}
-
-.current {
-  text-decoration: underline;
-  font-weight: bold;
-  font-size: 1.5em;
-  color: #ffffff;
-}
-
 /* NAV */
-ul {
-  margin-left: 10px;
+.nav {
+  max-width: 1000px;
+}
+
+.logo {
+  display: inline-block;
+  width: 280px;
+  margin: 40px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 10px 40px;
+  text-decoration: none;
   font-size: 1.5em;
-  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
 }
 
 nav ul a {
@@ -68,26 +80,14 @@ nav ul a:hover {
   color: #ffffff;
 }
 
-nav li {
-  display: inline-block;
-}
-
-nav a {
-  padding: 40px;
-}
-
 .searchbar {
-  float: right;
-  display: block;
-  color: #707070;
-  text-align: center;
-  padding: 10px 150px;
-  text-decoration: none;
-  font-size: 17px;
-  margin-left: 100px;
   border-radius: 28px;
+  font-size: 17px;
+  padding: 5px 150px;
+  text-align: center;
 }
 
+/* TOPNAV */
 .topnav {
   display: flex;
   justify-content: flex-end;
@@ -99,6 +99,7 @@ nav a {
   color: #ffffff;
   font-size: 1.5em;
   padding: 10px;
+  text-decoration: none;
 }
 
 .topnav-icons {
@@ -106,41 +107,28 @@ nav a {
   margin-left: 2px;
 }
 
-/* FRONTPAGE */
-
+/* Frontpage */
 .welcome {
   position: relative;
 }
 
 .get__started {
   position: absolute;
-  bottom: 125px;
   left: 1070px;
+  bottom: 100px;
   text-align: center;
 }
 
-.example__picture {
-  max-height: 275px;
-  min-width: 500px;
-  padding: 5px;
-  margin-top: 20px;
-}
-
 .frontpage__images {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 405px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 400px auto 20px auto;
+  max-width: 1000px;
+  grid-gap: 20px;
 }
 
 .frontpage__images img {
-  margin: 5px;
-}
-
-.logo {
-  max-width: 280px;
-  margin-top: 50px;
-  margin-left: 25px;
+  width: 100%;
 }
 
 /* SEARCH PAGE */
