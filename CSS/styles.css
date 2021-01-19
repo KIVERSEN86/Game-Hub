@@ -7,9 +7,10 @@ html {
   box-sizing: inherit;
 }
 
+body,
 h1,
 h2,
-.logo .cta {
+.cta {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -42,7 +43,7 @@ h1 {
 }
 
 /* NAV */
-.nav {
+nav {
   max-width: 1000px;
 }
 
@@ -91,7 +92,7 @@ nav ul a:hover {
   display: flex;
   justify-content: flex-end;
   background: #1b203d;
-  padding: 5px;
+  align-items: center;
 }
 
 .topnav__links {
@@ -123,7 +124,7 @@ nav ul a:hover {
   grid-template-columns: 1fr;
   margin: 300px auto 20px auto;
   max-width: 1000px;
-  grid-gap: 20px;
+  gap: 20px;
 }
 
 .frontpage__images img {
