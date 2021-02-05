@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Checkout succsess page for Game Hub">
+    <meta name="description" content="Create your account for Game Hub">
     <link href="css/styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b1235c982e.js" crossorigin="anonymous"></script>
-    <title>Game Hub | Checkout success </title>
+    <title>Game Hub | Create account </title>
   </head>
 <body>
     <section class="topnav">
@@ -29,13 +29,30 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="thank-you">
-          <div class="icon-circle">
-            <p class="purchase">Thank you for your purchase!</p>
-            <i class="fas fa-check-circle fa-20x icon-success"></i>
-          </div>
-        </section>
+    <main class="form-create">
+              <h1>Create Account</h1>
+              <form class="form-wrap">
+                <div class="input-box">
+                  <i class="fas fa-user-circle fa-2x"></i>
+                  <input type="text" name="Username" placeholder="Username">
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-envelope fa-2x"></i>
+                  <input type="text" name="Email" placeholder="Email">
+                </div>
+                  <div class="input-box">
+                    <i class="fas fa-unlock-alt fa-2x"></i>
+                    <input type="text" name="Password" placeholder="Password">
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="sell-games">
+                  <label for="sell-games">Check the box if you want to sell games</label>
+                </div>
+                  <div class="cta-create">
+                    <input type="submit" value="Join" href="account.html">
+                    <input type="submit" value="Cancel">
+                  </div>
+              </form>
     </main>
     <footer>
       <footer>
