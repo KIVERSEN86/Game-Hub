@@ -1,0 +1,8 @@
+main {
+  max-width: 1000px;
+  background: #fff;
+}
+
+.icon-pay {
+  display: flex;
+}

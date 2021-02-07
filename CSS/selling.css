@@ -1,0 +1,88 @@
+.nav-selling {
+  grid-area: navsell;
+}
+
+.box-selling {
+  grid-area: boxsell;
+}
+
+.container-selling {
+  background: #ffffff;
+  max-width: 1200px;
+  display: grid;
+  grid-template-areas: "navsell boxsell";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.nav-selling ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 0;
+  margin-right: 20px;
+}
+
+.nav-selling li {
+  background: #ffffff;
+  border: solid 1px #000;
+  width: 185px;
+  padding: 3px;
+  margin: 2px 5px;
+}
+
+.box-selling {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.icons-selling {
+  border: 1px solid #707070;
+  padding: 20px;
+  text-align: center;
+}
+
+.icons-selling i {
+  color: #1b203d;
+}
+
+.box-selling h1 {
+  grid-column: -1/1;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.box-selling h2 {
+  font-size: 1.5em;
+}
+
+.cta-upload {
+  border: 2px solid #707070;
+  text-align: center;
+  background: #e9e9e9;
+  color: #1b203d;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 4px;
+  width: 175px;
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 30px;
+}
+
+.cta-position {
+  position: relative;
+}
+
+.img-profile {
+  width: 150px;
+  border-radius: 50%;
+  margin: 40px 0 0 28px;
+  border: 3px solid #707070;
+}

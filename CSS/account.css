@@ -1,0 +1,155 @@
+.form-account {
+  grid-area: myform;
+  min-height: 500px;
+}
+.nav-account {
+  grid-area: mynav;
+  display: flex;
+  min-height: 500px;
+  border: solid 1px #707070;
+}
+
+.select-gender {
+  grid-area: myselect;
+  min-height: 500px;
+}
+
+.nav-account ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.nav-account li {
+  border: solid 1px #000;
+  padding: 7px;
+  margin: 2px 5px;
+}
+
+.img-profile {
+  width: 100px;
+  border-radius: 50%;
+  margin: 10px 0 0 18px;
+  border: 3px solid #707070;
+}
+
+.container-account {
+  display: grid;
+  grid-template-areas: "mynav myform myselect";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto 1fr auto;
+  max-width: 1000px;
+  margin: auto;
+  border: 1px solid #707070;
+  background: #ffffff;
+  margin-bottom: 50px;
+}
+
+.form-account {
+  margin-top: 86px;
+}
+
+.form-account > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.h1-account {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.form-account input,
+select {
+  margin: 15px;
+  padding: 10px;
+}
+
+.select-gender {
+  display: flex;
+}
+
+.select-gender i,
+label,
+select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select-gender select {
+  width: 110px;
+  padding: 2px;
+}
+
+.select-gender i,
+label {
+  margin-top: 50px;
+}
+
+.section-iconselect {
+  margin-top: 75px;
+  padding: 10px;
+}
+
+.section-iconselect i {
+  border: 1px solid #707070;
+  text-align: center;
+}
+
+.section-iconselect p {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.border-gender {
+  border: 1px solid #707070;
+}
+
+.section-iconselect label {
+  display: none;
+}
+
+.section-iconselect i,
+p,
+select {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .form-account {
+    display: flex;
+  }
+
+  .section-iconselect i {
+    font-size: 6em;
+  }
+
+  .nav-account li {
+    width: 200px;
+  }
+
+  .img-profile {
+    width: 150px;
+    margin: 10px 0 0 28px;
+  }
+
+  .section-iconselect i,
+  p,
+  select {
+    display: block;
+  }
+
+  .section-iconselect label {
+    display: block;
+  }
+
+  .h1-account {
+    font-size: 2em;
+  }
+
+  .form-account {
+    margin-top: 120px;
+  }
+}
