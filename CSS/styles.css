@@ -12,7 +12,8 @@ h2,
 h3,
 .topnav,
 nav,
-.container-contact {
+.container-contact,
+.cta {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }

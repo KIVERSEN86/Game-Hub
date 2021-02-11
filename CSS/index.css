@@ -23,6 +23,10 @@
   border: solid 1px #000000;
 }
 
+.get__started a:hover {
+  background: #707070;
+}
+
 .frontpage__images {
   display: flex;
   justify-content: space-evenly;
