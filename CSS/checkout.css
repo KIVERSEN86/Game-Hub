@@ -8,6 +8,7 @@ main {
   grid-template-columns: 1fr auto;
   margin: auto;
   background: #fff;
+  margin-bottom: 50px;
 }
 
 .icon-pay {
@@ -58,6 +59,12 @@ main {
   border: 1px solid #000;
 }
 
+.aside-pay h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2em;
+}
+
 .checkout-img {
   border: 1px solid #000;
 }
@@ -65,9 +72,39 @@ main {
 .cta-checkout {
   background: #e9e9e9;
   border: 1px solid #707070;
-  padding: 8px;
+  position: absolute;
+  top: 150px;
+  right: 15px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 135px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+}
+
+.cta-checkout a:hover {
+  background: #707070;
 }
 
 .price-box {
   display: flex;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.section-price1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 40px 5px;
+}
+
+.section-price2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.text-checkout {
+  text-align: center;
 }

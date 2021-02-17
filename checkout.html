@@ -24,7 +24,7 @@
       <input type="checkbox" id="hamburger-menu">
         <nav class="navbar">
             <ul class="nav-links">
-               <li><a href="index.html" class="current">Home</a></li>
+               <li><a href="index.html">Home</a></li>
                <li><a href="Games.html">Games</a></li>
                <li><a href="Categories.html">Categories</a></li>
                <li><a href="Contact.html">Contact</a></li>
@@ -72,24 +72,32 @@
                  </div>
          </section>
          <section class="aside-pay">
-           <h1>Order Summary</h1>
-           <p>Zelda Ocarina of time</p>
-          <img src="images/Image-6.jpg" alt="Picture of item in checkout" class="checkout-img"/>
-          <p>Super Maro Sunshine</p>
-          <img src="images/Image-6.jpg" alt="Picture of item in checkout" class="checkout-img"/>
+           <h1>Order</h1>
+           <div class="text-checkout">
+            <p>Zelda Ocarina of time</p>
+            <img src="images/Image-6.jpg" alt="Picture of item in checkout" class="checkout-img"/>
+           </div>
+           <div class="text-checkout">
+            <p>Super Maro Sunshine</p>
+            <img src="images/Image-6.jpg" alt="Picture of item in checkout" class="checkout-img"/>
+           </div>
           <div class="price-box">
-            <section>
-              <p>Subtotal</p><p>$68</p>
-              <p>Shipping</p><p>$14,99</p>
+            <section class="section-price1">
+              <p>Subtotal:</p>
+              <p>Shipping:</p>
+              <p>Total:</p>
             </section>
-            <section>
-              <p>Total</p><p>$82,99</p>
+            <section class="section-price2">
+              <p>$68</p>
+              <p>$14,99</p>
+              <p>$82,99</p>
+            </section>
+            <div>
               <a href="success.html" class="cta-checkout">Checkout</a>
-            </section>
-           </section>
+            </div>
           </div>
+        </section>
     </main>
-    <footer>
       <footer>
         <div class="container-footer">
           <div class="footer-box footer-1">
@@ -108,6 +116,5 @@
           </div>
         </div>
       </footer>
-    </footer>
 </body>
 </html>
