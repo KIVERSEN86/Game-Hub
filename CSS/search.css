@@ -40,6 +40,26 @@
   gap: 10px;
 }
 
+.item-container .grid-item,
+.container-search {
+  animation-name: show-items;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0s;
+}
+
+@keyframes show-items {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .item-container h2,
 p {
   text-align: center;

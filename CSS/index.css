@@ -21,10 +21,26 @@
   padding: 8px 25px;
   border-radius: 5px;
   border: solid 1px #000000;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
 }
 
-.get__started a:hover {
-  background: #707070;
+.cta:before {
+  content: "";
+  padding: 10px;
+  background: #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  height: 100px;
+  top: -30px;
+  left: -100px;
+  transition: left ease-in-out 1s;
+  opacity: 0.4;
+}
+
+.cta:hover:before {
+  left: 110%;
 }
 
 .frontpage__images {
