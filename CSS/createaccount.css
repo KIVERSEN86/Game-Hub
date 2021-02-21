@@ -27,6 +27,26 @@
   font-weight: bold;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.cta-create:before {
+  content: "";
+  padding: 10px;
+  background: #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  height: 100px;
+  top: -30px;
+  left: -100px;
+  transition: left ease-in-out 1s;
+  opacity: 0.4;
+}
+
+.cta-create:hover:before {
+  left: 115%;
 }
 
 .cta-create a {
