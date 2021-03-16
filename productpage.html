@@ -3,64 +3,47 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is your shopping cart for Game Hub">
+    <meta name="description" content="A specific page for a chosen product">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/cart.css" rel="stylesheet">
+    <link href="css/productpage.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b1235c982e.js" crossorigin="anonymous"></script>
-    <title>Game Hub | Cart </title>
+    <title>Game Hub | Product </title>
   </head>
 <body>
     <section class="topnav">
+      <div class="topnav-logo">
+        <a href="index.html"><img src="images/GameHub_Logo.png" class="logo-topnav" alt="Game Hub logo"/></a>
+      </div>
         <i class="fas fa-headset topnav-icons"></i>
           <a href="contact.html" class="topnav__links">Help</a>
         <i class="fas fa-user-circle topnav-icons"></i>
           <a href="createaccount.html" class="topnav__links">Login</a>
         <i class="fas fa-shopping-cart topnav-icons"></i>
           <a href="cart.html" class="topnav__links">Cart</a>
+          <label for="hamburger-menu"><i class="fas fa-bars icon-hamburger"></i></label>
+          <input type="checkbox" id="hamburger-menu">
     </section>
     <header>
       <a href="index.html"><img src="images/GameHub_Logo.png" class="logo frontpage-logo" alt="Game Hub logo"/></a>
-      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-      <input type="checkbox" id="hamburger-menu">
         <nav class="navbar">
             <ul class="nav-links">
                <li><a href="index.html">Home</a></li>
                <li><a href="Games.html">Games</a></li>
                <li><a href="categories.html">Categories</a></li>
                <li><a href="Contact.html">Contact</a></li>
-               <li><input type="text" placeholder="Search.." class="searchbar"></li>
+               <a href="search.html"><li><input type="text" placeholder="Search.." class="searchbar"></li></a>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Cart</h1>
-        <section class="product-info">
-            <div class="picture-container">
-                <img src="images/Image-6.jpg" alt="Example picture for the cart" class="cart-picture" />
-            </div>
-            <div>
-                <h2>This is product information</h2>
-                <p>This is more product information</p>
-            </div>
-            <div class="cta-box">
-                <a href="checkout.html" class="cta-cart">Proceed to checkout</a>
-                <a href="categories.html" class="cta-cart">Continue shopping</a>
+        <section class="product-specific">
+            <h1>Zelda Ocarina of time</h1>
+            <div class="product-container">
+                <img src="images/Image-6.jpg" alt="Picture of a game" class="product-img" />
             </div>
         </section>
-        <h2>Customers that bought this also bought</h2>
-        <section class="cart-bought">
-            <div class="picture-container">
-                <img src="images/Image-6.jpg" alt="Example picture for the cart" class="cart-picture" />
-            </div>
-            <div class="picture-container">
-                <img src="images/Image-6.jpg" alt="Example picture for the cart" class="cart-picture" />
-            </div>
-            <div class="picture-container">
-                <img src="images/Image-6.jpg" alt="Example picture for the cart" class="cart-picture" />
-            </div>
-            <div class="picture-container">
-                <img src="images/Image-6.jpg" alt="Example picture for the cart" class="cart-picture" />
-            </div>
+        <section class="product-specific2">
+            <p>This is information about Zelda Ocarina of Time</p>
         </section>
     </main>
       <footer>

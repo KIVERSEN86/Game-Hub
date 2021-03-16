@@ -93,10 +93,10 @@
 @media (min-width: 1400px) {
   .get__started {
     position: absolute;
-    text-align: center;
     bottom: 90px;
     left: 1050px;
     min-width: 325px;
+    margin-bottom: 0px;
   }
 
   .get__started h1 {

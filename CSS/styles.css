@@ -13,9 +13,14 @@ h3,
 .topnav,
 nav,
 .container-contact,
-.cta {
+.cta,
+.cta-cart {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+
+:root {
+  --icon-color: #1b203d;
 }
 
 p,
@@ -32,7 +37,7 @@ body {
 }
 
 .logo {
-  width: 200px;
+  display: none;
 }
 
 .frontpage-logo {
@@ -90,6 +95,10 @@ nav li {
   display: none;
 }
 
+.icon-hamburger {
+  color: #ffffff;
+}
+
 .nav-links a {
   display: block;
   font-weight: bold;
@@ -125,15 +134,19 @@ nav ul a:hover {
 
 .topnav {
   display: flex;
-  justify-content: flex-end;
   background: #1b203d;
+  justify-content: space-around;
   align-items: center;
+}
+
+.logo-topnav {
+  width: 100px;
+  display: flex;
 }
 
 .topnav__links {
   color: #ffffff;
   font-size: 1.25em;
-  padding: 10px;
   text-decoration: none;
 }
 
@@ -189,7 +202,7 @@ footer {
 }
 
 .footer-icon {
-  color: #1b203d;
+  color: var(--icon-color);
 }
 
 @media (min-width: 600px) {
@@ -199,8 +212,25 @@ footer {
     margin: 50px 200px;
   }
 
+  .topnav {
+    justify-content: flex-end;
+  }
+
+  .topnav__links {
+    padding: 10px;
+  }
+
   .frontpage-logo {
     width: 290px;
+  }
+
+  .logo-topnav {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    width: 200px;
   }
 
   .nav-links a {
@@ -231,6 +261,7 @@ footer {
     display: none;
   }
 }
+
 @media (min-width: 800px) {
   .footer-1 {
     display: flex;

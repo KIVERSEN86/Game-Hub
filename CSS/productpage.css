@@ -1,0 +1,13 @@
+main {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #ffff;
+}
+
+.product-specific {
+  max-width: 300px;
+  margin: auto;
+  border: solid 1px #000;
+  background-color: #ffff;
+  text-align: center;
+}
